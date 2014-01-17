@@ -1,0 +1,24 @@
+{
+  "name": "youtube-uploader",
+  "version": "0.1.0",
+  "description": "YouTube upload API",
+  "keywords": [
+    "youtube",
+    "upload",
+    "video"
+  ],
+  "author": {
+    "name": "TJ Holowaychuk",
+    "email": "tj@learnboost.com"
+  },
+  "dependencies": {
+    "mime": "1.2.2",
+    "request": "2.1.1",
+    "xml2js": "0.1.9",
+    "qs": "0.4.2"
+  },
+  "main": "index",
+  "engines": {
+    "node": "*"
+  }
+}
