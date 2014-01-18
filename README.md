@@ -1,7 +1,9 @@
 
 # youtube
 
-  YouTube upload API
+  YouTube upload API (fork)
+
+  Original version: [https://npmjs.org/package/youtube](https://npmjs.org/package/youtube)
 
 ## Example
 
@@ -10,20 +12,21 @@ var youtube = require('../');
 
 var video = youtube
 .createUpload('/path/to/my/video.webm')
-.user('tjholowaychukable')
+.user('default') // default chanel
 .source('LearnBoost')
-.password('rightmeow')
-.key('AI39si6L-CpOoC82Kn1noxwSXbfySDW0VCpxIPPwIu2YgZthc_XKEZPLw-4mxRxZYyh-xrGhZmuIKkNfFkhvZrptwc62qbXW8Q')
+.key('Google develport key')
+.token('Google access token')
 .title('Testing')
 .description('Some test stuff')
-.category('Education')
-.upload(function(err, res){
+.category('Education') // exitsting category name
+.upload(function(err, v){
   if (err) throw err;
   console.log('done');
-  console.log(res.id);
-  console.log(res.url);
-  console.log(res.embed());
-  console.log(res.embed(320, 320));
+  console.log(v.id);
+  console.log(v.url);
+  console.log(v.thumbnails);
+  console.log(v.embed());
+  console.log(v.embed(320, 320));
   console.log(require('util').inspect(res, false, 15, true));
 });
 ```
