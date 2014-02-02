@@ -14,7 +14,7 @@ var video = youtube
 .createUpload('/path/to/my/video.webm')
 .user('default') // default chanel
 .source('LearnBoost')
-.key('Google develport key')
+.key('Google developer key')
 .token('Google access token')
 .title('Testing')
 .description('Some test stuff')
